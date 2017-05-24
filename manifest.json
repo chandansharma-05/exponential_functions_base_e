@@ -1,0 +1,27 @@
+{
+  "viewAssets": {
+    "included": [
+      "index.html",
+      "js/player.js",
+      "js/common.js",
+	  "images/02_tickmark_blank.png",
+	  "images/03_tickmark.png",
+	  "images/07_arrow.png",
+	  "images/07_arrow_down.png",
+	  "images/config_.png",
+	  "images/dot_menu.png",
+	  "images/menu.png",
+	  "images/refresh.png",
+	  "images/thik_down_arrow.png",
+	  "images/thik_up_arrow.png",
+	  "images/thin_down_arrow.png",
+	  "images/thin_up_arrow.png",
+	  "css/style.css",
+	  "css/fontsfamily.css",
+	  "css/player.css",
+      "widget.json",
+      "../../../mhe.shared-jquery-v2/jquery.min.js",
+      "../../../mhe.shared-widget-v1/widget.js"
+    ]
+  }
+}

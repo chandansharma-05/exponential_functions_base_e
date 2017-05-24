@@ -1,0 +1,380 @@
+/* =====================================EDITOR PAGE STYLESHEET ======================================= */
+.editor_main_outer{
+	 position:absolute;
+	 width:1024px;
+	 margin:0px auto;
+	 left:0px;
+	 right:0px;
+	 background:#fff;
+	 height: 100%;
+}
+.editorInner{
+	/*padding: 10px 20px;
+	background-color: #CBD4CF;
+	vertical-align: top;
+	color: #234A5B;
+	margin-bottom: 0px;
+	font-size: 16px;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;*/
+}
+.editor_main_outer .left_side{
+	width: 35%;
+    float: left;
+    padding: 0px 25px;
+    box-sizing: border-box;
+}
+.editor_main_outer .right_side{
+    width: 65%;
+    background: #fff;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+.headingBar {
+    /* background: #f3f3f3; */
+    /* height: 40px; */
+    /* width: 100%; */
+    /* border-bottom: 2px solid #ccc; */
+    /* line-height: 40px; */
+    /* padding: 0px 20px; */
+    /* box-sizing: border-box; */
+    /* font-weight: bold; */
+    /* margin-top: 10px; */
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.editor_svg_control{
+    width: 100%;
+    height: 598px;
+    border: 1pt solid #e3e3e4;
+    overflow: scroll;
+    margin-top: 26px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*.editor_main_outer .sliderOne, .sliderTwo, .sliderThree, .sliderFour{
+	 width:100%;
+	 overflow: hidden;
+	 margin-top: 15px;
+	 display: table;
+}*/
+.editor_main_outer .formula_outer{
+    width: 100%;
+    background: #f1f1f1;
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+    box-sizing: border-box;
+    border-radius: 4px;
+    clear: both;
+    position: relative;
+    top: 0px !important;
+}
+.chkSpace{
+	padding: 0px 0px;
+	display:inline;
+	padding-top: 0px;
+}
+.chckbxDiv {
+	width: 27px;
+	height: 27px;
+	background-image:url(../images/02_tickmark_blank.png);
+	background-repeat:no-repeat;
+	display: inline-block;
+}
+.edit-toggle-button:focus{
+	box-shadow: inset 0 0 0 2px #F79123; outline: none;
+}
+input[type=checkbox].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0;
+	border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 30px;
+    height: 24px;
+    display:inline-block;
+    line-height:15px;
+    background-repeat:no-repeat;
+    /* background-position: 0 0; */
+    font-size: 16px;
+    vertical-align: middle;
+    cursor:pointer;
+    /* width: 17px; */
+    padding-top: 7px;
+    position: relative;
+    top: -1px;
+    background-size: 27px;
+    padding-right: 7px;
+	
+}
+
+ input[type=checkbox].css-checkbox + label.css-label:focus{
+  border:#F79123;
+   box-shadow: inset 0 0 0 1px #F79123; outline: none;
+   border-radius:6px;
+} 
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	/*background-position: 0 -15px;*/
+	background-image:url("../images/03_tickmark.png");
+}
+label.css-label {
+	background-image:url("../images/02_tickmark_blank.png");
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	background-size: contain;
+	user-select: none;
+	/* background-position: 0 -4px; */
+}
+input[type=text]{
+	height:25px;
+	font-size:14px;
+	max-width:100px;
+}
+.textBxSpace{
+	float:left;
+	padding:0px 20px;	
+}
+.textBxSpace span{
+	padding-right: 0px;
+	/* font-weight:bold; */
+	font-style: italic;
+}
+.editorInner .submit_btn:after{
+	
+display: none;
+}
+.updateChanges{
+    width: 80px;
+    height: 31px;
+    background: #F1F1F2;
+    border: none;
+    color: #244A5A;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;
+    border: 1px solid #234a5b;
+    height: 40px;
+    font-size: 16px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    border: 0;
+    top: 0;
+    position: static;
+}
+.previewOuter{
+	margin: 0px 0px;
+	/* padding-bottom: 100px; */
+}
+.previewOuter:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.editorInner .textBxSpace {
+    float: left;
+    padding: 0px 3px;
+    width: 111px;
+}
+.editorInner input[type="number"] {
+    display: inline;
+    background: #F1F1F2;
+    max-width: 50px;
+    width:auto;
+    text-align: left;
+    padding: 0 10px;
+    border: 1px solid #234A5A;
+    border-radius: 5px;
+    padding-right: 0px;
+    background: F1F1F2;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.editorInner .content_Outer.textvalues {
+    display: inline-block;
+    padding-right: 0px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.editorInner > div:after {
+    /* border-right: 1px solid; */
+    /* height: 35px; */
+    /* width: 1px; */
+    /* display: inline-block; */
+    /* content: ""; */
+    /* position: absolute; */
+    /* right: 0px; */
+    /* top: -4px; */
+    /* background-color: #a6a8a7; */
+}
+
+.submit_btn:after {
+    display: none;
+}
+
+.editorInner > div {
+    /* vertical-align: middle; */
+    /* position: relative; */
+    /* padding-right: 10px; */
+    /* display: inline-block; */
+}
+
+.editorInner > div.content_Outer:after {
+    right: 5px;
+}
+
+.headingBar.textvalues:after {
+    display: none;
+}
+
+.headingBar.textvalues {
+    padding-right: 0px;
+    padding: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.headingBar.textvalues1:after {
+	display : none;
+}
+
+.headingBar.textvalues1 {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 8px;
+    display: block;
+    font-size: 16px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    display: inline-block;
+}
+
+.content_Outer.textvalues:after {
+    top: -2px;
+    display: none;
+}
+
+.left_side, .right_side {
+    /* padding-top: 12px; */
+}
+
+@media screen and (max-width : 990px){
+	.editorInner > div {
+		/* padding: 6px 0; */
+	}
+	
+	.editorInner > div:after{
+		width : 0px;
+		height : 0px;
+	}
+}
+
+.edit-popup {
+    position: absolute;
+    width: 370px;
+    height: auto;
+    bottom: 0px;
+    background-color: #BBC6BE;
+    /* border: 1px solid; */
+    display: none;
+    border-radius: 5px 5px 0 0;
+    left: 0px;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #e1e1e1; */
+}
+
+.edit-popup-container {
+    position: relative;
+}
+
+.edit-toggle-button.activeButton{
+	background-color : #BBC6BE
+}
+.edit-toggle-button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/config.png);
+    width: 100px;
+    /* height: 25px; */
+    line-height: 28px;
+    /* padding-left: 53px; */
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center 16px;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 9px;
+}
+
+.hideElements {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 480px){
+	.editor_svg_control{
+		width: 100%;
+		height: 400px;
+		border: 1pt solid #CFD5D4;
+		overflow: scroll;
+		height: 347px !important;
+		margin-top: 27px;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+@media screen and (max-width: 280px){
+	.editor_svg_control {
+    width: 100%;
+    height: 598px;
+    border: 1pt solid #e3e3e4;
+    overflow: scroll;
+    height: 310px !important;
+    margin-top: 26px;
+    -webkit-overflow-scrolling: touch;
+}
+}

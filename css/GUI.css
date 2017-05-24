@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "mheelemsansspitalic";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspitalic.woff);
+}
+
+@font-face{
+	font-family: "mheelemsansspitalic";
+	font-style: normal;
+	font-weight: 100;
+	src: url(../fonts/mheelemsansspitalic.woff);
+}
+
+@font-face{
+	font-family: "mheelemsansspregular";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspregular.woff);
+}
+
+@font-face{
+	font-family: "mheelemsansspbold";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspbold.woff);
+}
+
+@font-face{
+	font-family: "mheelemsansspbolditalic";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspbolditalic.woff);
+}
+
+body{
+	font-family: "mheelemsansspregular";
+	background:#f2f2f2;
+	margin:0px;
+	padding:0px;
+	font-size:18px;
+	height:100%;
+}
+
+.varitalic{
+	font-family: "mheelemsansspitalic";
+}
+
+.varbolditalicred{
+	font-family: "mheelemsansspbolditalic";
+	color:#E07777;
+}
+
+.varbolditalicgreen{
+	font-family: "mheelemsansspbolditalic";
+	color:#64A400;
+}
+
+.varbolditalicblue{
+	font-family: "mheelemsansspbolditalic";
+	color:#77C6DD;
+}
+
+.varbolditalicpurple{
+	font-family: "mheelemsansspbolditalic";
+	color:#C470E3;
+}
+
+.varred{
+	font-family: "mheelemsansspbold";
+	color:#E07777;
+}
+
+.vargreen{
+	color:#64A400;
+}
+.vargreenBold{
+	color:#64A400;
+	font-family: "mheelemsansspbolditalic";
+}
+.vargreenBoldOnly{
+	color:#64A400;
+	font-family: "mheelemsansspbold";
+}
+.varblue{
+	font-family: "mheelemsansspbold";
+	color:#77C6DD;
+}
+.varblues{
+	color:#8fcbfb;
+}
+.varbluesBold{
+	color:#8fcbfb;
+	font-family: "mheelemsansspbolditalic";
+}
+.varbluesBoldOnly{
+	color:#8fcbfb;
+	font-family: "mheelemsansspbold";
+}
+.varorange{
+	color:#F56900;
+}
+.varorangeBold{
+	color:#F56900;
+	font-family: "mheelemsansspbolditalic";
+}
+.varorangeBoldOnly{
+	color:#F56900;
+	font-family: "mheelemsansspbold";
+}
+.varpurple{
+	font-family: "mheelemsansspbold";
+	color:#C470E3;
+}
+
+.equation {
+	font-family: "mheelemsansspregular";
+	font-size: 16pt;
+	position:absolute;
+	width:400px;
+	height:20px;
+	/*border:1px solid #00adef;line-height:30px;*/
+	padding-left: 0px;
+	color:#000000;
+}
+
+.boxvalue {
+	font-family: "mheelemsansspregular";
+	font-size:12pt;
+	width:48px;
+	height:25px;
+	border:1pt solid #333333;
+}
+
+input.checkbox{  
+	 width : 1em ; 
+	 height : 1em ;    
+}

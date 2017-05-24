@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>Exponential Functions, Base e</title>
+	  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+				 menuSettings: {inTabOrder: false}
+			});
+		</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="../../../mhe.shared-jquery-v2/jquery.min.js" type="text/javascript"></script>
+	  <script src="../../../mhe.shared-widget-v1/widget.js" type="text/javascript"></script>
+	  <script type="text/javascript" src="js/player.js"></script>
+	  <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" href="css/gui.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+   </head>
+   <body>
+      <div id="main_outer" class='main_outer'>
+        <div class="innerDiv">
+            <div class='left_side'>
+				<div class="toogleQuestion">
+					<div class="arrowToggle"></div>
+					<div class="explore-slope">
+						Explore <span>Exponential Functions, Base e</span>
+					</div>
+				</div>
+               <div class='question_Div'>What happens when you change the values of <i>a</i> and <i>k</i>?</div>
+
+			  <div class='sliderOne'>
+                  <div class='x1_value_text'><i>a</i><span class = 'colonclass1'>&#58;</span></div>
+                  <div class='range_slider'>
+                     <div id="x1Slider" class='slider_1_Color '></div>
+					 <div id="sliderFill_1" class="sliderFill"></div>
+                     <div id="x1Point" tabindex="0" class="point_1 " ontouchmove="dragGo(event)" ontouchend = "dragStop(event)"  ontouchstart = "moveSlider(event, id, 0.1, 5);" onkeydown = "moveSlider(event, id, 0.1, 5);" onMouseDown="moveSlider(event, id, 0.1, 5);" onkeyup="pointMoving(event, id, 0.1, 5);"></div>
+                  </div>
+                  <div class='counter_box' id="x1Value" >
+				  	 <span class="up"></span>
+					 <span class="down"></span>
+                   <input class="txtValue" title=" "  tabindex="0" id="x1Text" min="0.1" max="5" type="number" pattern="\d*" type="numeric" onKeyPress="return isNumberKey(event, id);" onKeyUp="moveSlider(event, id, 0.1, 5)"  onMouseDown="moveSlider(event, id, 0.1, 5)" onkeydown="changeValues(event, id, 0.1, 5);" />
+                  </div>
+               </div>
+               <div class='sliderTwo'>
+                  <div class='x1_value_text'><i>k</i><span class = 'colonclass1'>&#58;</span></div>
+                  <div class='range_slider'>
+					 <div id="sliderFill_2" class="sliderFill"></div>
+                     <div id="x2Slider" class='slider_2_Color '></div>
+                     <div id="x2Point" tabindex="0" class="point_2 " ontouchmove="dragGo(event)"  ontouchend = "dragStop(event)"  ontouchstart = "moveSlider(event, id, 0.1, 5);" onkeydown = "moveSlider(event, id, 0.1, 5);" onMouseDown="moveSlider(event, id, 0.1, 5);" onkeyup="pointMoving(event, id, 0.1, 5);"></div>
+                  </div>
+                  <div class='counter_box' id="x2Value">
+				  	 <span class="up"></span>
+					 <span class="down"></span>
+                     <input class="txtValue" title=" "  pattern="[0-9]*" inputmode="numeric" tabindex="0" id="x2Text" min="0.1" max="5" type="number" onKeyPress="return isNumberKey(event, id);" onKeyUp="moveSlider(event, id, 0.1, 5)" onKeyPress="return isNumberKey(event, id);" onmousedown="moveSlider(event, id, 0.1, 5)" onkeydown="changeValues(event, id, 0.1, 5);"/>
+                  </div>
+               </div>
+			   <div class='formula_details'>
+  					<div>${y = \class{varorangeBold}{\cssId{check}{a}}e^{\class{vargreenBold}kx}}$</div>
+  					<div>${y = \class{varorangeBold}{\cssId{mvalue}{1}}e^{\class{vargreenBold}{\cssId{bvalue}{1}}x}}$</div>
+				</div>
+
+			   <div id='alertBox'>
+					<div class='alertMessage' id='alertMessage'></div>
+					<center><button class='btnOk' id='btnOk'>OK</button></center>
+			   </div>
+			   <div style="clear:both"></div>
+         <div class="formula_outer">
+        <div class="informulaOuter">
+						<div class='box_1'>
+							<div class='chkBoxes' id="slopeBox">
+								<div tabindex="0" id="slopChk" class="chckbxDiv" onkeypress="checkbox(id)" onMouseDown="checkbox(id)"></div>
+								  <span>Asymptotes</span>
+							</div>
+							<div class='outPutBox' id='slopeB'>
+						     <div>
+							   <span id= "colon" class = 'colonclass1'>&#58;</span>
+							   <span  id="mvalue2" class="varorangeBoldOnly">${y = 0}$</span>
+							 </div>
+							</div>
+						</div>
+						<div class='box_2'>
+							<div class='chkBoxes' id="yInterceptBox">
+							  <div tabindex="0" id="yChk" class="chckbxDiv" onkeypress="checkbox(id)" onKeydown="popmenu(event, id)" onMouseDown="checkbox(id)"></div>
+							  <span>Intercept</span>
+						    </div>
+							<div class='outPutBox' id='yInt'>
+								<div>
+								<span id= "colon" class = 'colonclass1'>&#58;</span>
+								 <span  id="bvalue2" class="vargreenBoldOnly">(0, 1)</span>
+								</div>
+						    </div>
+						</div>
+
+                    </div>
+              </div>
+            </div>
+            <div class='right_side'>
+               <div class="svg_control" id="svgHolder" tabindex='0'></div>
+            </div>
+         </div>
+         <div id="footer_main" class="footer_main">
+		    <div class='refresh_part'>
+              <div id="searchBtn" class="searchOption" tabindex = "0"></div>
+			           <span id="arrowspop"></span>
+               <div  id="reset" tabindex="0"  class="refresh_btn" onkeypress="resett('')" onClick="resett('')"></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

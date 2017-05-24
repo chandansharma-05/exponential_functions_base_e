@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "MHEelemsansSP-Italic";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspitalic.woff);
+}
+
+@font-face{
+	font-family: "MHEelemsansSP-small";
+	font-style: normal;
+	font-weight: 100;
+	src: url(../fonts/mheelemsansspitalic.woff);
+}
+
+@font-face{
+	font-family: "MHEelemsansSP-Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspregular.woff);
+}
+
+@font-face{
+	font-family: "MHEelemsansSP-Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspbold.woff);
+}
+
+@font-face{
+	font-family: "MHEelemsansSP-BoldItalic";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/mheelemsansspbolditalic.woff);
+}
+@font-face{
+	font-family: "Helvetica-BoldItalic";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/HelveticaNeue_bolditalic.otf);
+}
+body{
+	font-family: "MHEelemsansSP-Regular";
+	background:#f2f2f2;
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	height:100%;
+}
+
+
+
+
+
+
+
+.varitalic{
+	font-family: "Helvetica-Italic";
+}
+
+.varbolditalicred{
+	font-family: "Helvetica-BoldItalic";
+	color:#E07777;
+}
+
+.varbolditalicgreen{
+	font-family: "Helvetica-BoldItalic";
+	color:#6DC030;
+}
+
+.varbolditalicblue{
+	font-family: "Helvetica-BoldItalic";
+	color:#77C6DD;
+}
+
+.varbolditalicpurple{
+	font-family: "Helvetica-BoldItalic";
+	color:#C470E3;
+}
+
+.varred{
+	font-family: "Helvetica-Bold";
+	color:#E07777;
+}
+
+.vargreen{
+	font-family: "Helvetica-Bold";
+	color:#6DC030;
+}
+
+.varblue{
+	font-family: "Helvetica-Bold";
+	color:#77C6DD;
+}
+
+.varpurple{
+	font-family: "Helvetica-Bold";
+	color:#C470E3;
+}
+
+.equation {
+	font-family: "Helvetica";
+	font-size: 16pt;
+	position:absolute;
+	width:400px;
+	height:20px;
+	/*border:1px solid #00adef;line-height:30px;*/
+	padding-left: 0px;
+	color:#000000;
+}
+
+.boxvalue {
+	font-family: "Helvetica";
+	font-size:12pt;
+	width:48px;
+	height:25px;
+	border:1pt solid #333333;
+}
+
+input.checkbox{  
+	 width : 1em ; 
+	 height : 1em ;    
+}
